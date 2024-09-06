@@ -63,7 +63,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: -ms-page;
+  position: -ms-page, fixed, relative;
   width: 100%;
   bottom: 0;
 }
