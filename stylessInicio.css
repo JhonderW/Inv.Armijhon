@@ -3,14 +3,21 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
-  /* background-color: rgb(0, 140, 255); */
   background-color: rgb(0, 140, 255);
   color: white;
   padding: 10px 0;
   text-align: center;
+}
+
+.div1 {
+  /* background-color: #000; */
+
 }
 
 nav {
@@ -29,11 +36,13 @@ nav a {
   margin: 0 15px;
   color: #000;
   text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
 
 }
 
 .container {
-  width: 80%;
+  background-color: aqua;
+  width: 100%;
   margin: auto;
   overflow: hidden;
 }
@@ -41,21 +50,31 @@ nav a {
 .products {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 
 .product {
-  background: white;
-  padding: 15px;
-  margin: 15px;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* height: auto; */
   width: calc(33% - 60px);
+  /* -webkit-box-direction: reverse; */
+
 }
+
+img {
+  margin: auto; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.322);
+}
+
 
 .product img {
   width: 100%;
   height: auto;
+  border-radius: 3.5px;
 }
 
 footer {
@@ -63,7 +82,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: -ms-page;
+  margin-top: auto;
   width: 100%;
   bottom: 0;
 }
